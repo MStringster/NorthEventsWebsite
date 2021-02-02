@@ -1,0 +1,266 @@
+/* CSS DOCUMENT */
+/* Developed By Michael Stringer */
+
+header
+{
+    padding-left: 10px; 
+}
+
+/* Font styling for the top header  */
+h1
+{
+    font-family: 'Cinzel Decorative'; font-size:40px; font-weight: 600; 
+}
+
+/* Styling for the tagline under the H1 */
+#tagline
+{
+    margin-bottom: 20px;
+}
+
+/* The Navigation Bar Styling */
+nav
+{
+    height: 2em;
+    
+}
+
+/* font for everything within the page bar the H1 headers */
+body
+{
+    
+    font-family: 'Roboto'; 
+}
+
+/* Container holding the elements within the Update Page */
+#container
+{
+    border: 3px solid #4E9CAF;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    margin-top: 10px;
+    width: 50%;
+}
+
+/* Table styling starts here */
+/* Table holder */
+#resp-table
+{
+    width:100%;
+    display:table;
+}
+
+/* Table Header holder */
+#resp-table-header
+{
+    display: table-header-group;
+    font-weight: bold;
+    font-size:125%;
+}
+
+/* Table Header Cells */
+.table-header-cell
+{
+    display: table-cell;
+    padding: 10px;
+    text-align: justify;
+    border: 1px solid #787878;
+    padding-left: 1%;
+    background-color: #4E9CAF;
+    color: white;
+    font-size: 100%;
+}
+
+/* Table Body Holder */
+#resp-table-body
+{
+    display: table-row-group;
+}
+
+/* Table Row Holder */
+.resp-table-row
+{
+    display:table-row;
+    
+}
+
+/* Table Body Cells */
+.table-body-cell
+{
+    display:table-cell;
+    border: 1px solid black;
+    font-size: 0.9em;
+}
+
+/* Edit button on the right of the table which has animation when the user hovers over it .*/
+
+/* Button itself Styling. */
+.button 
+{
+  display: inline-block;
+  /*border-radius: 4px;*/
+  background-color: #4E9CAF;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 100%;
+  padding: 10px;
+  width: 50px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+/* Button Font Styling */
+.button span 
+{
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+/* Button Font Styling after the mouse hover. */
+.button span:after 
+{
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+/* The movement that happens to span by the user hovering over the button with their pointer. */
+.button:hover span
+{
+  padding-right: 25px;
+}
+
+/* The Movement of the Span class after the hover has taken place */
+.button:hover span:after 
+{
+  opacity: 1;
+  right: 0;
+}
+
+
+/* Styling for event description in the edit events page */
+#eventDesc
+{
+    height: 150px;
+    width: 100%;   
+}
+
+/* Styling for legend used in the edit events page */
+legend 
+{
+    background-color: #000;
+    color: #fff;
+    padding: 3px 6px;
+    width: 50%;
+}
+
+/* Styling for form used in the edit events page */
+form
+{
+    width:50%;
+}
+
+/* styling for inputs whereever they are found within the site */
+input 
+{
+    margin: .4rem;
+    width: 100%;
+}
+
+/* Styling for select buttons whereever they are found within the site */
+select
+{
+    margin: .4rem;
+    width: 100%;    
+}
+
+
+/* CSS For Login popup box */
+/* The Contact Box (background) */
+.login {
+    display: none; /* Hidden by default */
+    
+    /* positioning + Size */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto;
+    
+    
+    /* colors */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.8); /* Black w/ opacity */
+}
+
+/* Contact Content */
+.loginContent {
+    
+    position: relative;
+    background-color: #f0f0f0;
+    margin: auto;
+    border: 1px solid #888;
+    text-align: center;
+    color: #000000;
+    
+    width: 400px;
+    height: 225px; 
+}
+/* The Close Button found on the first popup box */
+.close {
+    color: #000000;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+/* helps the user to know if they are hovering over the close button or not */
+.close:hover,
+.close:focus {
+    color: #8B8B8B;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* header at the top of the contact box */
+.loginHeader {
+    padding: 2px 16px;
+    background-color: #4E9CAF;
+    color: #000000;
+}
+
+/* Navigation Bar Styling */
+.navBtns
+{
+    display: inline;
+    width: 115px;
+    height: 25px;
+    background: #4E9CAF;
+    padding: 10px;
+    text-align: center;
+   /* border-radius: 5px; REMOVE DIS */
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    margin-left: 10px;
+    
+}
+/* Navigation bar stying for when the user Hovers */
+.navBtns:hover
+{
+    cursor: pointer;
+    background:  #2c5963;
+}
+
+
